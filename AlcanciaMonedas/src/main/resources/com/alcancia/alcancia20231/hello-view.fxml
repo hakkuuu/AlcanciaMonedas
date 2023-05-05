@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.alcancia.alcancia20231.HelloController">
+   <children>
+      <AnchorPane prefHeight="153.0" prefWidth="574.0">
+         <children>
+            <ImageView fitHeight="203.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Encabezado.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="173.0" prefHeight="138.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="btn50" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#bnt50_click" prefHeight="94.0" prefWidth="103.0">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@50.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bnt100" layoutX="128.0" layoutY="14.0" mnemonicParsing="false" onAction="#bnt100_click" prefHeight="94.0" prefWidth="103.0">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@100.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bnt200" layoutX="249.0" layoutY="14.0" mnemonicParsing="false" onAction="#bnt200_click" prefHeight="94.0" prefWidth="103.0">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@200.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bnt500" layoutX="363.0" layoutY="14.0" mnemonicParsing="false" onAction="#bnt500_click" prefHeight="94.0" prefWidth="103.0">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@500.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bnt1000" layoutX="483.0" layoutY="14.0" mnemonicParsing="false" onAction="#bnt1000_click" prefHeight="94.0" prefWidth="103.0">
+               <graphic>
+                  <ImageView fitHeight="82.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@1000.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="lbl50" layoutX="62.0" layoutY="115.0" text="0" />
+            <Label fx:id="lbl100" layoutX="176.0" layoutY="115.0" text="0" />
+            <Label fx:id="lbl200" layoutX="297.0" layoutY="115.0" text="0" />
+            <Label fx:id="lbl500" layoutX="411.0" layoutY="115.0" text="0" />
+            <Label fx:id="lbl1000" layoutX="531.0" layoutY="115.0" text="0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="311.0" prefHeight="260.0" prefWidth="600.0">
+         <children>
+            <Line endX="393.0" layoutX="199.0" layoutY="14.0" startX="-191.0" />
+            <Pane layoutX="25.0" layoutY="29.0" prefHeight="200.0" prefWidth="194.0">
+               <children>
+                  <ImageView fx:id="imgmarrano" fitHeight="165.0" fitWidth="187.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@alcancia.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lbletiqueta" layoutX="61.0" layoutY="178.0" text="Alcancia Vacia" />
+                  <ImageView fx:id="imgroto" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@alcanciaRota.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <TabPane layoutX="366.0" layoutY="23.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Romper Alcancia">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="btnromper" layoutX="8.0" layoutY="5.0" mnemonicParsing="false" onAction="#btnromper_click" prefHeight="145.0" prefWidth="187.0">
+                                 <graphic>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@martillo.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+            <Button fx:id="btnnueva" layoutX="375.0" layoutY="223.0" mnemonicParsing="false" onAction="#btnnueva_click" prefHeight="25.0" prefWidth="187.0" text="Nueva Alcancia" />
+            <Label fx:id="lbltotal" layoutX="153.0" layoutY="222.0" text="0" textAlignment="RIGHT">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
